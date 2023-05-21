@@ -448,6 +448,10 @@ body.light-theme{
     padding-right: 30px;
 }
 
+ .events-title{
+    font-size: 15px;
+ }
+
 }
 
 @media only screen and (max-width: 380px) and (orientation: portrait){
@@ -461,4 +465,8 @@ body.light-theme{
         margin-top: 20px;
         margin-right: 130px;
     }
+
+    .events-title{
+        font-size: 15px;
+     }
 }
