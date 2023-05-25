@@ -54,25 +54,23 @@ themeToggleBtn.addEventListener('click', function () {
     }
 });
 
+var slideIndex = 1;
+showSlides(slideIndex);
 
-let slideIndex = 0;
-const slides = document.getElementsByClassName("slide");
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
-
-function showSlides() {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-showSlides();
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
 
 function automateScrolling() {
     const slides = document.querySelectorAll('.product-slide');

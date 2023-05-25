@@ -191,55 +191,108 @@ body.light-theme{
     display: block;
 }
 
+
 .section {
-  position: relative;
+position: relative;
 }
 
 #about {
-  height: 100%;
-  background-image: url('https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?cs=srgb&dl=pexels-rovenimagescom-949587.jpg&fm=jpg&w=1280&h=853');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-
+height: 100%;
+background-image: url('https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?cs=srgb&dl=pexels-ella-olsson-1640774.jpg&fm=jpg&w=1280&h=853');
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
 }
 
 #about .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
 }
 
 #about .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 1;
-  color: white;
-  font-size: 3rem;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+z-index: 1;
+color: white;
+font-size: 3rem;
 }
 
 .parallax {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 @media (max-width: 768px) {
-  #about {
-    background-attachment: scroll;
-  }
+#about {
+background-attachment: scroll;
+}
+}
+
+
+.slideshow-container {
+    height: 100%;
+    width: 100%;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+}
+  
+.slideshow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}
+  
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-width: 1cm;
+    border-radius: 2cm;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;  
+}
+  
+.prev:hover, .next:hover {
+    background-color: green;
 }
 
 
@@ -278,188 +331,140 @@ body.light-theme{
     color: white;
 }
 
-.slideshow-container {
-    height: 100%;
-    width: 100%;
-    position:relative;
-    justify-content: center;
-    align-items: center;
-}
-  
-.slideshow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    overflow: hidden;
-}
-  
-.slide {
-    display: none;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color:whitesmoke;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-  
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;  
-}
-  
-.prev:hover, .next:hover {
-    background-color: green;
-}
-
-
 .contact-section {
-  position: relative;
-  background-image: url('https://images.pexels.com/photos/1542252/pexels-photo-1542252.jpeg?cs=srgb&dl=pexels-kerde-severin-1542252.jpg&fm=jpg&w=1280&h=853');
-  background-size: cover;
-  background-position: center;
-}
-
-.contact-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.contact-content {
-  position:relative;
-  z-index: 2;
-  padding: 40px;
-  text-align: center;
-  color: #fff;
-}
-
-.section-title {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.contact-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-icon {
-  margin: 0 10px;
-  transition: transform 0.3s ease-out;
-}
-
-.contact-icon:hover {
-  transform: translateY(-5px) scale(1.1);
-}
-
-.contact-icon i {
-  font-size: 24px;
-}
-
-.contact-handle {
-  display: block;
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-
-
-@media screen and (min-width: 1024px) {
-  .menu{
-      position: static;
-      width: initial;
-      padding: initial;
-      background-color: transparent;
-      opacity: 1;
-      transform: scale(1);
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/1542252/pexels-photo-1542252.jpeg?cs=srgb&dl=pexels-kerde-severin-1542252.jpg&fm=jpg&w=1280&h=853');
+    background-size: cover;
+    background-position: center;
   }
-
-  .menu > .list{
-      flex-direction: row;
-  }
-}
-
-@media only screen and (max-width: 600px) and (orientation: portrait) {
-  .contact-icon{
-      font-size: 18px;
-  }
-  .contact-handle{
-      font-size: 9px;
-  }
-  body {
-      font-family: var(--font-family);
-      font-size: var(--font-size-sm);
-      color: var(--light-color-alt);
-      background-color: var(--primary-background-color);
-      letter-spacing: 1px;
-      transition: background-color .25s, color .25s;
-      }
-   #header {
-          height: 50px; /* Adjust the height as desired */
-        }
-  .logo{
-      font-size: 15px;
-  }
-
-  .event-title {
-    margin-right: 20px;
-    font-size: 10px;
-}
   
-  .event-content {
-    width: 60%;
-    font-size: 12px;
-    margin-top: 20px;
-    padding-right: 30px;
-}
+  .contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-content {
+    position:relative;
+    z-index: 2;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-icon {
+    margin: 0 10px;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .contact-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+  }
+  
+  .contact-icon i {
+    font-size: 24px;
+  }
+  
+  .contact-handle {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+  }
 
- .events-title{
-    font-size: 15px;
- }
-
-}
-
-@media only screen and (max-width: 380px) and (orientation: portrait){
-    .event-title {
-        margin-right: 20px;
+/* Responsive Styles */
+@media screen and (min-width: 1024px) {
+    .menu{
+        position: static;
+        width: initial;
+        padding: initial;
+        background-color: transparent;
+        opacity: 1;
+        transform: scale(1);
+    }
+  
+    .menu > .list{
+        flex-direction: row;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) and (orientation: portrait) {
+    .contact-icon{
+        font-size: 18px;
+    }
+    .contact-handle{
         font-size: 9px;
     }
-      
-    .event-content {
-        font-size: 10px;
-        margin-top: 20px;
-        margin-right: 130px;
-    }
-
-    .events-title{
+    body {
+        font-family: var(--font-family);
+        font-size: var(--font-size-sm);
+        color: var(--light-color-alt);
+        background-color: var(--primary-background-color);
+        letter-spacing: 1px;
+        transition: background-color .25s, color .25s;
+        }
+     #header {
+            height: 50px; /* Adjust the height as desired */
+          }
+    .logo{
         font-size: 15px;
-     }
-}
-
-@media only screen and (min-height: 350px) and (max-height: 450px) and (orientation: landscape) {
-    .event-content p{
-        font-size: 13px;
     }
-}
+  
+    .event-title {
+      margin-right: 20px;
+      font-size: 10px;
+  }
+    
+    .event-content {
+      width: 60%;
+      font-size: 12px;
+      margin-top: 20px;
+      padding-right: 30px;
+  }
+  
+   .events-title{
+      font-size: 15px;
+   }
+  
+  }
+  
+  @media only screen and (max-width: 380px) and (orientation: portrait){
+      .event-title {
+          margin-right: 20px;
+          font-size: 9px;
+      }
+        
+      .event-content {
+          font-size: 10px;
+          margin-top: 20px;
+          margin-right: 130px;
+      }
+  
+      .events-title{
+          font-size: 15px;
+       }
+  }
+  
+  @media only screen and (min-height: 350px) and (max-height: 450px) and (orientation: landscape) {
+    .slideshow-container{
+        height: 100%;
+        width: 100%;
+    } 
+    
+    .event-content p{
+          font-size: 13px;
+      }
+  }
