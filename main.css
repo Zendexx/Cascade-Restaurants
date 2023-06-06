@@ -161,6 +161,12 @@ body.light-theme{
     color: var(--light-color);
 }
 
+.list-contacts:hover,
+.btn:hover,
+.btn:hover span{
+    color: var(--light-color);
+}
+
 .moon-icon{
     display: none;
 }

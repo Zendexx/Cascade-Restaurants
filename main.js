@@ -29,6 +29,20 @@ const toggleMenu = () =>{
 
 menuToggleIcon.addEventListener('click', toggleMenu);
 
+// Get the first element with the class name "my-link"
+var element = document.getElementsByClassName("list-link");
+
+// Add a click event listener to the element
+element.addEventListener("click", function(event) {
+  // Prevent the default behavior of the link
+  event.preventDefault();
+  // Get the href attribute of the element
+  var href = element.getAttribute("href");
+  // Redirect the page to the href value
+  window.location.href = href;
+});
+
+
 
 
 
@@ -99,46 +113,4 @@ function automateScrolling() {
 
 document.addEventListener('DOMContentLoaded', automateScrolling);
 
-// Smooth scrolling function
-function smoothScroll(target, duration) {
-  var targetElement = document.querySelector(target);
-  var targetPosition = targetElement.offsetTop;
-  var startPosition = window.pageYOffset;
-  var distance = targetPosition - startPosition;
-  var startTime = null;
-
-  function animation(currentTime) {
-    if (startTime === null) startTime = currentTime;
-    var timeElapsed = currentTime - startTime;
-    var scrollAmount = ease(timeElapsed, startPosition, distance, duration);
-    window.scrollTo(0, scrollAmount);
-    if (timeElapsed < duration) requestAnimationFrame(animation);
-  }
-
-  // Easing function for smooth scrolling effect
-  function ease(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return (c / 2) * t * t + b;
-    t--;
-    return (-c / 2) * (t * (t - 2) - 1) + b;
-  }
-
-  requestAnimationFrame(animation);
-}
-
-// Attach click event listeners to the navigation links
-var navLinks = document.querySelectorAll('nav a');
-navLinks.forEach(function (link) {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
-    var target = this.getAttribute('href');
-    var duration = 1000; // Adjust duration (in milliseconds) as desired
-    smoothScroll(target, duration);
-  });
-});
-
-
-
-
-
-}
+};
