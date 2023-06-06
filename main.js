@@ -55,46 +55,49 @@ themeToggleBtn.addEventListener('click', function () {
 });
 
 
-let slideIndex = 0;
-const slides = document.getElementsByClassName("slide");
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
+// Get the first element with the class name "slideshow"
+var slideshow = document.getElementsByClassName("slideshow")[0];
 
-function showSlides() {
-for (let i = 0; i < slides.length; i++) {
-  slides[i].style.display = "none";
+// Get the images inside the slideshow element
+var images = slideshow.getElementsByTagName("img");
+
+// Get the back and forward buttons by their ids
+var back = document.getElementById("prev");
+var forward = document.getElementById("next");
+
+// Set the current image index to 0
+var current = 0;
+
+// Show the first image and hide the rest
+images[current].style.display = "block";
+for (var i = 1; i < images.length; i++) {
+  images[i].style.display = "none";
 }
-slideIndex++;
-if (slideIndex > slides.length) {
-  slideIndex = 1;
-}
-slides[slideIndex - 1].style.display = "block";
-setTimeout(showSlides, 5000); // Change image every 5 seconds
-}
 
-showSlides();
-
-function automateScrolling() {
-  const slides = document.querySelectorAll('.product-slide');
-  const interval = 2000; // Set the interval time in milliseconds (e.g., 2000ms = 2 seconds)
-  let currentSlide = 0;
-
-  function showSlide(index) {
-    slides.forEach((slide) => {
-      slide.style.display = 'none';
-    });
-
-    slides[index].style.display = 'block';
+// Add a click event listener to the back button
+back.addEventListener("click", function() {
+  // Hide the current image
+  images[current].style.display = "none";
+  // Decrease the current image index by 1
+  current--;
+  // If the current image index is less than 0, wrap it to the last image index
+  if (current < 0) {
+    current = images.length - 1;
   }
-  function nextSlide() {
-    currentSlide++;
-    if (currentSlide >= slides.length) {
-      currentSlide = 0;
-    }
-    showSlide(currentSlide);
+  // Show the current image
+  images[current].style.display = "block";
+});
+
+// Add a click event listener to the forward button
+forward.addEventListener("click", function() {
+  // Hide the current image
+  images[current].style.display = "none";
+  // Increase the current image index by 1
+  current++;
+  // If the current image index is greater than or equal to the number of images, wrap it to 0
+  if (current >= images.length) {
+    current = 0;
   }
-
-  setInterval(nextSlide, interval);
-}
-
-document.addEventListener('DOMContentLoaded', automateScrolling);
+  // Show the current image
+  images[current].style.display = "block";
+});
