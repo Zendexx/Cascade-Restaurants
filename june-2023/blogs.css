@@ -359,7 +359,6 @@ margin-left: 30px;
 
 .author-image-box{
     position: relative;
-    height: 280px;
 }
 
 .author-about{
@@ -383,6 +382,20 @@ margin-left: 30px;
 .author-about .social-media{
     margin-top: auto;
     margin-bottom: 0;
+}
+
+
+.d-grid{
+    display: grid;
+}
+
+.article-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .25s;
+    border-radius: 15px;
 }
 
 .bibliography{
