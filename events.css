@@ -161,6 +161,12 @@ body.light-theme{
     color: var(--light-color);
 }
 
+.list-contacts:hover,
+.btn:hover,
+.btn:hover span{
+    color: var(--light-color);
+}
+
 .moon-icon{
     display: none;
 }
@@ -244,7 +250,7 @@ body.light-theme{
 
 
 .event-intro {
-    background-image: url('https://images.pexels.com/photos/5794773/pexels-photo-5794773.jpeg?cs=srgb&dl=pexels-nataliya-vaitkevich-5794773.jpg&fm=jpg&w=1280&h=1920');
+    background-image: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?cs=srgb&dl=pexels-jakub-novacek-924824.jpg&fm=jpg&w=1280&h=1920');
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -258,24 +264,20 @@ body.light-theme{
   
 .event-title {
     text-align: center;
-    padding-left: 30px;
     color: white;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    max-width: 75%;
 }
 
-.events-title {
-    text-align: center;
-    padding-left: 30px;
-    color: white;
-    font-size: 30px;
-    text-decoration: underline;
-}
+
   
 .event-content {
     text-align: center;
-    max-width: 600px;
-    margin-top: 20px;
-    margin-left: 120px;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
     color: white;
+    max-width: 55%;
 }
 
 .slideshow-container {

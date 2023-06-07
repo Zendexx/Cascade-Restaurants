@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cascade Restaurants | Events</title>
+        <title>Cascade Events | Events</title>
         <link rel="icon" type="image/png" sizes="32x32" href="chef-hat.png">
         <!-- Remix icons -->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -17,53 +17,56 @@
     <body>
         <!-- Header -->
         <header class="header" id="header">
-    
-            <nav class="navbar container">
-                <a href="./">
-                    <h2 class="logo">Cascade Restaurants</h2> 
-                </a>
-    
-                <div class="menu" id="menu">
-                    <ul class="list">
-                        <li class="list-item">
-                            <a href="./" class="list-link">Home</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link current">Events</a>
-                        </li>
-                        <li class="list-item">
-                          <a href="restaurant" class="list-link">Restaurant</a>
+
+          <nav class="navbar container">
+              <a href="./">
+                  <h2 class="logo">Cascade Events</h2> 
+              </a>
+  
+              <div class="menu" id="menu">
+                  <ul class="list">
+                    <li class="list-item">
+                          <a href="./" class="list-link">Home</a>
+                    </li>
+                      <li class="list-item">
+                          <a href="events" class="list-link current">Events</a>
+                    </li>
+                      <li class="list-item">
+                        <a href="restaurant" class="list-link">Restaurant</a>
+                    </li>
+                    <li class="list-item">
+                      <a href="blog" class="list-link">Blog</a>
+                  </li>
+                      <li class="list-item">
+                          <a href="#Contacts" class="list-contacts">Contacts</a>
                       </li>
-                        <li class="list-item">
-                            <a href="#Contacts" class="list-link">Contacts</a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="list list-right">
-                    <button class="btn place-items-center" id="theme-toggle-btn">
-                        <i class="ri-sun-line sun-icon"></i>
-                        <i class="ri-moon-line moon-icon"></i>
-                    </button>
-                          
-    
-                    <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
-                        <i class="ri-menu-3-line open-menu-icon"></i>
-                        <i class="ri-close-line close-menu-icon"></i>
-                    </button>
-                </div>
-    
-            </nav>
-    
-        </header>
+                  </ul>
+              </div>
+  
+              <div class="list list-right">
+                  <button class="btn place-items-center" id="theme-toggle-btn">
+                      <i class="ri-sun-line sun-icon"></i>
+                      <i class="ri-moon-line moon-icon"></i>
+                  </button>
+                        
+  
+                  <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                      <i class="ri-menu-3-line open-menu-icon"></i>
+                      <i class="ri-close-line close-menu-icon"></i>
+                  </button>
+              </div>
+  
+          </nav>
+  
+      </header>
 
         <section class="event-intro">
             <div class="event-container">
                 <div class="event-title">
-                  <h1>Introducing Cascade: A Culinary Haven for Food Enthusiasts</h1>
+                  <h1>Cascade Events: Creating Unforgettable Experiences for All Occasions</h1>
                 </div>
                 <div class="event-content">
-                  <p>Cascade is a remarkable restaurant that combines gastronomic excellence, captivating ambiance, and exceptional service. With a focus on fresh, locally-sourced ingredients, our talented chefs create delectable dishes that are both visually stunning and delicious. Our elegantly designed space provides the perfect setting for any occasion, whether it's a romantic dinner, business lunch, or family celebration. At Cascade, we pride ourselves on our commitment to exceptional service, ensuring that every moment spent with us is memorable. Join us for special events, indulge in our chef's tasting menu, and explore our carefully curated wine list. Book your table today and embark on a culinary journey at Cascade, where unforgettable dining experiences await.</p>
+                  <p>Cascade Events is your premier events company specializing in corporate and individual event planning and management. With a focus on meticulous attention to detail, personalized approaches, and professional expertise, we create unforgettable experiences that leave a lasting impression on your guests. From corporate conferences and product launches to intimate gatherings and dream weddings, our team handles every aspect of event planning to ensure a seamless and stress-free experience. Contact Cascade Events today and let us turn your vision into an extraordinary reality.</p>
                 </div>
             </div>
         </section>
@@ -87,8 +90,8 @@
                   <img src="Event-11.jpg" alt="Image 11" class="slide">
                   <img src="Event-12.jpg" alt="Image 12" class="slide">
                 </div>
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
+                <a class="prev" id="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" id="next" onclick="plusSlides(1)">❯</a>
 
          </section>
 
@@ -106,13 +109,13 @@
                 <div class="contact-icon">
                   <a href="#" class="contact-link">
                     <i class="fas fa-envelope contact-icon"></i>
-                    <span class="contact-handle">mail@mail.com</span>
+                    <span class="contact-handle">cascadeforevents@gmail.com</span>
                   </a>
                 </div>
                 <div class="contact-icon">
                   <a href="#" class="contact-link">
                     <i class="fab fa-twitter contact-icon"></i>
-                    <span class="contact-handle">@tweetmaster</span>
+                    <span class="contact-handle">@cascade4events</span>
                   </a>
                 </div>
                 <div class="contact-icon">
