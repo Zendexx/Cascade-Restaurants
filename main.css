@@ -87,7 +87,12 @@ body.light-theme{
     padding: 0 1.5rem;
     border-radius: 15px;
 }
-
+.content h1{
+  color: #1BF48B;
+  padding-bottom: 60px;
+  font-size: 85px;
+  font-family: 'Dancing Script', cursive;
+}
 .place-items-center{
     display: inline-flex;
     align-items: center;
@@ -156,12 +161,6 @@ body.light-theme{
 }
 
 .list-link:hover,
-.btn:hover,
-.btn:hover span{
-    color: var(--light-color);
-}
-
-.list-contacts:hover,
 .btn:hover,
 .btn:hover span{
     color: var(--light-color);
@@ -394,7 +393,9 @@ body.light-theme{
   border-radius: 15px;
 }
 
-
+.condact_segtion{
+  padding-top: 2%;
+ }
 .contact-section {
   position: relative;
   background-image: url('https://images.pexels.com/photos/1542252/pexels-photo-1542252.jpeg?cs=srgb&dl=pexels-kerde-severin-1542252.jpg&fm=jpg&w=1280&h=853');
@@ -448,187 +449,252 @@ body.light-theme{
   font-size: 14px;
   margin-top: 5px;
 }
-
-
+/* MEDIA QUARRIES FOR SMARTPHONES TABLETS AND COMPUTERS ----------------------- */
 
 @media (max-width: 767px) {
-  #about {
-    background-attachment: scroll;
-  }
-
-}
-
-@media screen and (min-width: 1024px) {
-  .menu{
-      position: static;
-      width: initial;
-      padding: initial;
-      background-color: transparent;
-      opacity: 1;
-      transform: scale(1);
-  }
-
-  .menu > .list{
-      flex-direction: row;
-  }
-}
-
-@media only screen and (max-width: 600px) and (orientation: portrait) {
+    #about {
+      background-attachment: scroll;
+    }
   
-  .restaurant-link{
-      font-size: 10px;
   }
-  #about img{
-      width: 20%;
-      height: 20%;
+  
+  @media screen and (min-width: 1024px) {
+    .menu{
+        position: static;
+        width: initial;
+        padding: initial;
+        background-color: transparent;
+        opacity: 1;
+        transform: scale(1);
+    }
+  
+    .menu > .list{
+        flex-direction: row;
+    }
   }
-  .content h1{
-      font-size: 70px;
-  }
-  .content h2{
-      font-size: 22px;
-  }
-
-  .main-content h2{
-      font-size: 20px;
-  }
-  .main-content p{
-      font-size: 12px;
-  }
-  .section-title{
-      font-size: 25px;
-  }
-  .contact-icon{
-      font-size: 18px;
-  }
-  .contact-handle{
-      font-size: 9px;
-  }
-  body {
-      font-family: var(--font-family);
-      font-size: var(--font-size-sm);
-      color: var(--light-color-alt);
-      background-color: var(--primary-background-color);
-      letter-spacing: 1px;
-      transition: background-color .25s, color .25s;
-      }
-   #header {
-          height: 50px; /* Adjust the height as desired */
+  
+  @media only screen and (max-width: 600px) and (orientation: portrait) {
+    
+    .restaurant-link{
+        font-size: 10px;
+    }
+    #about img{
+        width: 20%;
+        height: 20%;
+    }
+    .content h1{
+        font-size: 70px;
+    }
+    .content h2{
+        font-size: 22px;
+    }
+  
+    .main-content h2{
+        font-size: 20px;
+    }
+    .main-content p{
+        font-size: 12px;
+    }
+    .section-title{
+        font-size: 25px;
+    }
+    .contact-icon{
+        font-size: 18px;
+    }
+    .contact-handle{
+        font-size: 9px;
+    }
+    body {
+        font-family: var(--font-family);
+        font-size: var(--font-size-sm);
+        color: var(--light-color-alt);
+        background-color: var(--primary-background-color);
+        letter-spacing: 1px;
+        transition: background-color .25s, color .25s;
         }
-  .logo{
-      font-size: 15px;
-  }
-  .slideshow-container {
+     #header {
+            height: 50px; /* Adjust the height as desired */
+    }
+    .logo{
+        font-size: 15px;
+    }
+    .slideshow-container {
+        width: 50%;
+        height: 45%;
+       
+    } 
+    .main-content{
+        padding-left: 10px;
+    }
+  
+    .restaurant-picture{
       width: 50%;
-      height: 45%;
+    }
+  }
+  @media only screen and (min-height: 200px) and (max-height: 300px) and (orientation: landscape) {
+    .events {
+      height: 100%;
+    }
+  
+    .restaurant-section{
+      height: 100%;
+    }
+    .content h2{
+     font-size: 22px;
+   }
+   .condact_segtion{
+    padding-top: 10%;
+   }
+   .Restaurant_segtion{
+    padding-top: 15%;
+   }
+   .logo{
+    font-size: 17px;
+   }
+  #header {
+    height: 50px; /* Adjust the height as desired */
+   }
+   .slideshow-container {
+    width: 50%;
+    height: 70% !important;
+   } 
+  }
+  @media only screen and (max-width: 1140px) and (min-width: 700px){
+    .slideshow-container {
+      width: 50%;
+      height: 60%;
      
   } 
-  .main-content{
-      padding-left: 10px;
-  }
-
-  .restaurant-picture{
-    width: 50%;
-  }
-}
-
-
-@media only screen and (max-width: 1140px) and (min-width: 700px){
-  .slideshow-container {
-    width: 50%;
-    height: 60%;
-   
-} 
-
- .main-content h2{
-  font-size: 30px;
- }
-
- .main-content p{
-  font-size: 15px;
- }
-}
-
-@media only screen and (max-width: 699px) and (min-width: 601px){
-  .slideshow-container {
-    width: 50%;
-    height: 55%;
-   
-}
-
-.main-content h2{
-  font-size: 30px;
- }
-
- .main-content p{
-  font-size: 15px;
- }
-}
-
-@media only screen and (max-width: 450px) and (min-width: 350px) {
-
- .main-content h2{
-  font-size: 13px;
- }
-
- .main-content p{
-  font-size: 10px;
- }
-
- .slideshow-container {
-  width: 50%;
-  height: 38%;
- 
-}
-
-}
-
-@media only screen and (min-height: 350px) and (max-height: 450px) and (orientation: landscape) {
-  .content h2 {
-    font-size: 25px;
-  }
-  .events {
-    height: 100%;
-    width: 100%;
-  }
-
-  .restaurant-section{
-    height: 100%;
-    width: 100%
-  }
-}
-
-@media only screen and (max-width: 349px) and (min-width: 279px) {
-  #about{
-    width: 100%;
-  }
-  .content h2{
-    font-size: 25px;
-  }
-
-  .main-content h2{
-   font-size: 13px;
-  }
- 
-  .main-content p{
-   font-size: 8px;
-  }
- 
-  .slideshow-container {
-   width: 50%;
-   height: 38%;
   
- }
- 
- }
- 
- @media only screen and (min-height: 250px) and (max-height: 349px) and (orientation: landscape) {
-   .events {
-     height: 100%;
+   .main-content h2{
+    font-size: 30px;
    }
- 
-   .restaurant-section{
-     height: 100%;
+  
+   .main-content p{
+    font-size: 15px;
    }
- }
-
+  }
+  
+  @media only screen and (max-width: 699px) and (min-width: 601px){
+    .slideshow-container {
+      width: 50%;
+      height: 55%;
+     
+  }
+  
+  .main-content h2{
+    font-size: 30px;
+   }
+  
+   .main-content p{
+    font-size: 15px;
+   }
+  }
+  
+  @media only screen and (max-width: 450px) and (min-width: 350px) {
+  
+   .main-content h2{
+    font-size: 13px;
+   }
+  
+   .main-content p{
+    font-size: 10px;
+   }
+  
+   .slideshow-container {
+    width: 50%;
+    height: 38%;
+   
+  }
+  
+  }
+  
+  @media only screen and (min-height: 350px) and (max-height: 450px) and (orientation: landscape) {
+    .content h2 {
+      font-size: 25px;
+    }
+    .events {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .restaurant-section{
+      height: 100%;
+      width: 100%
+    }
+  }
+  
+  @media only screen and (max-width: 349px) and (min-width: 279px) {
+    #about{
+      width: 100%;
+    }
+    .content h2{
+      font-size: 25px;
+    }
+  
+    .main-content h2{
+     font-size: 13px;
+    }
+   
+    .main-content p{
+     font-size: 8px;
+    }
+   
+    .slideshow-container {
+     width: 50%;
+     height: 50%;
+    
+   }
+   
+   }
+   @media only screen and (max-width: 380px) and (min-width: 279px) and (orientation: portrait){
+    .slideshow-container {
+      width: 50%;
+      height: 57%;
+     
+    }
+   }
+   @media only screen and (max-width: 500px) and (min-width: 380px) and (orientation: portrait){
+    .slideshow-container {
+      width: 50%;
+      height: 50%;
+     
+    }
+   }
+   @media only screen and (max-width: 300px) and (orientation: portrait){
+    #header {
+      height: 70px; /* Adjust the height as desired */
+     }
+    .slideshow-container {
+      width: 50%;
+      height: 60%;
+      padding-bottom: 20%;
+    }
+   }
+   @media only screen and (max-width: 480px) {
+    .contact-icons {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .contact-icon {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      
+    }
+  
+    .contact-icon .contact-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+    }
+  
+    .contact-icon .contact-link i {
+      margin-right: 10px;
+    }
+    .contact-handle {
+      font-size: 14px;
+    }
+  }
