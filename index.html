@@ -1,149 +1,152 @@
 <DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cascade Events | Home</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="chef-hat.png">
-    <!-- Remix icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="./main.css">
-</head>
-<body>
-    <!-- Header -->
-    <header class="header" id="header">
-
-        <nav class="navbar container">
-            <a href="./">
-                <h2 class="logo">Cascade Events</h2> 
-            </a>
-
-            <div class="menu" id="menu">
-                <ul class="list">
-                  <li class="list-item">
-                        <a href="./" class="list-link current">Home</a>
-                  </li>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cascade Restaurants | Home</title>
+      <link rel="stylesheet" href="main.css">
+      <link rel="icon" type="image/png" sizes="32x32" href="chef-hat.png">
+      <!-- Remix icons -->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+      <!-- Custom styles -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <!-- Header -->
+      <header class="header" id="header">
+  
+          <nav class="navbar container">
+              <a href="./">
+                  <h2 class="logo">Cascade Restaurants</h2> 
+              </a>
+  
+              <div class="menu" id="menu">
+                  <ul class="list">
                     <li class="list-item">
-                        <a href="events" class="list-link">Events</a>
-                  </li>
-                    <li class="list-item">
-                      <a href="restaurant" class="list-link">Restaurant</a>
-                  </li>
-                  <li class="list-item">
-                    <a href="blog" class="list-link">Blog</a>
-                </li>
-                    <li class="list-item">
-                        <a href="#Contacts" class="list-contacts">Contacts</a>
+                          <a href="./" class="list-link current">Home</a>
                     </li>
-                </ul>
+                      <li class="list-item">
+                          <a href="events.html" class="list-link">Events</a>
+                    </li>
+                      <li class="list-item">
+                        <a href="restaurant.html" class="list-link">Restaurant</a>
+                    </li>
+                      <li class="list-item">
+                          <a href="#Contacts" class="list-link">Contacts</a>
+                      </li>
+                  </ul>
+              </div>
+  
+              <div class="list list-right">
+                  <button class="btn place-items-center" id="theme-toggle-btn">
+                      <i class="ri-sun-line sun-icon"></i>
+                      <i class="ri-moon-line moon-icon"></i>
+                  </button>
+                        
+  
+                  <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                      <i class="ri-menu-3-line open-menu-icon"></i>
+                      <i class="ri-close-line close-menu-icon"></i>
+                  </button>
+              </div>
+  
+          </nav>
+  
+      </header>
+  
+      <section id="about" class="section parallax">
+          <div class="overlay"></div>
+          <div class="content">
+            <!-- <h1>Cascade Restaurants</h1> -->
+            <h2>Fresh ingredients, bold flavors, and</h2>
+            <h2>unforgettable meals!</h2>
+          </div>
+       </section>
+  
+        <section id="Events" class="events">
+          <div class="slideshow-container">
+            <div class="slide fade">
+              <img src="images/Carrousel1.png" alt="Event 1">
             </div>
-
-            <div class="list list-right">
-                <button class="btn place-items-center" id="theme-toggle-btn">
-                    <i class="ri-sun-line sun-icon"></i>
-                    <i class="ri-moon-line moon-icon"></i>
-                </button>
-                      
-
-                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
-                    <i class="ri-menu-3-line open-menu-icon"></i>
-                    <i class="ri-close-line close-menu-icon"></i>
-                </button>
+            <div class="slide fade">
+              <img src="images/Carrousel2.png" alt="Event 2">
             </div>
-
-        </nav>
-
-    </header>
-
-    <section id="about" class="section parallax">
-        <div class="overlay"></div>
-        <div class="content">
-          <h2>Fresh ingredients, bold flavors, and</h2>
-          <h2>unforgettable meals!</h2>
-        </div>
-     </section>
-
-      <section id="Events" class="events">
-        <div class="slideshow-container">
-          <div class="slide fade">
-            <img src="Carousel1.jpg" alt="Event 1">
+            <div class="slide fade">
+              <img src="images/Carrousel3.png" alt="Event 3">
+            </div>
+            <!-- Add more slide elements as needed -->
           </div>
-          <div class="slide fade">
-            <img src="Carousel2.jpg" alt="Event 2">
-          </div>
-          <div class="slide fade">
-            <img src="Carousel3.jpg" alt="Event 3">
-          </div>
-          <!-- Add more slide elements as needed -->
-        </div>
-        <div class="main-content">
+          <div class="main-content">
+              <h2>Our Events</h2>
+              <p>Cascade Restaurant is the perfect place to plan your events, holidays and meetings. With delicious meals, top notch service and a beautiful setting, we'll make sure that your experience with us will be unforgettable.</p>
+              <div class="restaurant-link">
+                <a href="events.html">Discover Events <span class="arrow">&rarr;</span></a>
+              </div>
+            </div>
+        </section>
+      <div class="Restaurant_segtion"> 
+        <section id = "Restaurant" class="restaurant-section">
+          <div class="main-content">
             <h2>Our Catering</h2>
-            <p>Cascade Restaurant is the perfect place to plan your events, holidays and meetings. With delicious meals, top notch service and a beautiful setting, we'll make sure that your experience with us will be unforgettable.</p>
+            <p>Welcome to Cascade, where quality meals and beautiful decor come together to create the perfect atmosphere for your dining experience. Since opening our doors 10 years ago, we have been committed to delivering the best customer service and quality meals with the help of our talented chefs and waiting staff.</p>
             <div class="restaurant-link">
-              <a href="events">Discover Events <span class="arrow">&rarr;</span></a>
+              <a href="restaurant.html">Find Your Taste <span class="arrow">&rarr;</span></a>
             </div>
           </div>
-      </section>
-      
-      <section id = "Restaurant" class="restaurant-section">
-        <div class="main-content">
-          <h2>Our Cascade</h2>
-          <p>Welcome to Cascade, where quality meals and beautiful decor come together to create the perfect atmosphere for your dining experience. Since opening our doors 10 years ago, we have been committed to delivering the best customer service and quality meals with the help of our talented chefs and waiting staff.</p>
-          <div class="restaurant-link">
-            <a href="restaurant">Find Your Taste <span class="arrow">&rarr;</span></a>
+          <div class="restaurant-picture">
+            <img src="images/download.jpeg" alt="Picture 1">
           </div>
-        </div>
-        <div class="restaurant-picture">
-          <img src="https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?cs=srgb&dl=pexels-igor-starkov-914388.jpg&fm=jpg&h=1280&w=1280&fit=crop" alt="Picture 1">
-        </div>
-      </section>
-      
-      <section id="Contacts" class="contact-section">
-        <div class="contact-overlay"></div>
-        <div class="contact-content">
-          <h2 class="section-title">Get In Touch</h2>
-          <div class="contact-icons">
-            <div class="contact-icon">
-              <a href="#fb" target="_blank" class="contact-link">
-                <i class="fab fa-facebook-square contact-icon"></i>
-                <span class="contact-handle">@cascade4events</span>
-              </a>
-            </div>
-            <div class="contact-icon">
-              <a href="mailto:cascadeforevents@gmail.com" class="contact-link">
-                <i class="fas fa-envelope contact-icon"></i>
-                <span class="contact-handle">cascadeforevents@gmail.com</span>
-              </a>
-            </div>
-            <div class="contact-icon">
-              <a href="https://twitter.com/cascade4events" target="_blank" class="contact-link">
-                <i class="fab fa-twitter contact-icon"></i>
-                <span class="contact-handle">@cascade4events</span>
-              </a>
-            </div>
-            <div class="contact-icon">
-              <a href="https://www.instagram.com/cascade4events/" target="_blank" class="contact-link">
-                <i class="fab fa-instagram contact-icon"></i>
-                <span class="contact-handle">@cascade4events</span>
-              </a>
+        </section>
+      </div>  
+       <!--------------------- Contact section -------------------------  -->
+      <div class="condact_segtion">
+        <section id="Contacts" class="contact-section">
+          <div class="contact-overlay"></div>
+          <div class="contact-content">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-icons">
+              <div class="contact-icon">
+                <a href="#" class="contact-link">
+                  <i class="fas fa-phone contact-icon"></i>
+                  <span class="contact-handle">+254792000888</span>
+                </a>
+              </div>
+              <div class="contact-icon">
+                <a href="#" class="contact-link">
+                  <i class="fas fa-envelope contact-icon"></i>
+                  <span class="contact-handle">Cascadeforevents@gmail.com</span>
+                </a>
+              </div>
+              <div class="contact-icon">
+                <a href="#" class="contact-link">
+                  <i class="fab fa-twitter contact-icon"></i>
+                  <span class="contact-handle">@Cascade4events</span>
+                </a>
+              </div>
+              <div class="contact-icon">
+                <a href="https://www.instagram.com/cascade_event.s/" class="contact-link">
+                  <i class="fab fa-instagram contact-icon"></i>
+                  <span class="contact-handle">@Cascade4events</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      
-
-      </body>
-      </html>
-          
-      
-      <script src="./main.js"></script>
-      <script src="./slide.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-</body>
-</html>
-</DOCTYPE>
+        </section>
+      </div>   
+  
+        </body>
+        </html>
+            
+        
+        <script src="main.js"></script> 
+        <script src="slide.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </body>
+  </html>
+  </DOCTYPE>
